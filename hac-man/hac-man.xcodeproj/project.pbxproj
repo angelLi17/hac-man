@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED3DBCDF2CF2678400F7356A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCDE2CF2678400F7356A /* AppDelegate.swift */; };
+		ED3DBCE12CF2678400F7356A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCE02CF2678400F7356A /* GameScene.sks */; };
+		ED3DBCE32CF2678400F7356A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCE22CF2678400F7356A /* Actions.sks */; };
+		ED3DBCE52CF2678400F7356A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCE42CF2678400F7356A /* GameScene.swift */; };
+		ED3DBCE72CF2678400F7356A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCE62CF2678400F7356A /* ViewController.swift */; };
+		ED3DBCE92CF2678500F7356A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCE82CF2678500F7356A /* Assets.xcassets */; };
+		ED3DBCEC2CF2678500F7356A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCEB2CF2678500F7356A /* Base */; };
+		ED3DBCF72CF2678500F7356A /* hac_manTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCF62CF2678500F7356A /* hac_manTests.swift */; };
+		ED3DBD012CF2678500F7356A /* hac_manUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBD002CF2678500F7356A /* hac_manUITests.swift */; };
+		ED3DBD032CF2678500F7356A /* hac_manUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBD022CF2678500F7356A /* hac_manUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED3DBCF32CF2678500F7356A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3DBCD32CF2678400F7356A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3DBCDA2CF2678400F7356A;
+			remoteInfo = "hac-man";
+		};
+		ED3DBCFD2CF2678500F7356A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED3DBCD32CF2678400F7356A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED3DBCDA2CF2678400F7356A;
+			remoteInfo = "hac-man";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED3DBCDB2CF2678400F7356A /* hac-man.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hac-man.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3DBCDE2CF2678400F7356A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED3DBCE02CF2678400F7356A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		ED3DBCE22CF2678400F7356A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		ED3DBCE42CF2678400F7356A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		ED3DBCE62CF2678400F7356A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED3DBCE82CF2678500F7356A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED3DBCEB2CF2678500F7356A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED3DBCED2CF2678500F7356A /* hac_man.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hac_man.entitlements; sourceTree = "<group>"; };
+		ED3DBCF22CF2678500F7356A /* hac-manTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hac-manTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3DBCF62CF2678500F7356A /* hac_manTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hac_manTests.swift; sourceTree = "<group>"; };
+		ED3DBCFC2CF2678500F7356A /* hac-manUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hac-manUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED3DBD002CF2678500F7356A /* hac_manUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hac_manUITests.swift; sourceTree = "<group>"; };
+		ED3DBD022CF2678500F7356A /* hac_manUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hac_manUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED3DBCD82CF2678400F7356A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3DBCEF2CF2678500F7356A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3DBCF92CF2678500F7356A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED3DBCD22CF2678400F7356A = {
+			isa = PBXGroup;
+			children = (
+				ED3DBCDD2CF2678400F7356A /* hac-man */,
+				ED3DBCF52CF2678500F7356A /* hac-manTests */,
+				ED3DBCFF2CF2678500F7356A /* hac-manUITests */,
+				ED3DBCDC2CF2678400F7356A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED3DBCDC2CF2678400F7356A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DBCDB2CF2678400F7356A /* hac-man.app */,
+				ED3DBCF22CF2678500F7356A /* hac-manTests.xctest */,
+				ED3DBCFC2CF2678500F7356A /* hac-manUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED3DBCDD2CF2678400F7356A /* hac-man */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DBCDE2CF2678400F7356A /* AppDelegate.swift */,
+				ED3DBCE02CF2678400F7356A /* GameScene.sks */,
+				ED3DBCE22CF2678400F7356A /* Actions.sks */,
+				ED3DBCE42CF2678400F7356A /* GameScene.swift */,
+				ED3DBCE62CF2678400F7356A /* ViewController.swift */,
+				ED3DBCE82CF2678500F7356A /* Assets.xcassets */,
+				ED3DBCEA2CF2678500F7356A /* Main.storyboard */,
+				ED3DBCED2CF2678500F7356A /* hac_man.entitlements */,
+			);
+			path = "hac-man";
+			sourceTree = "<group>";
+		};
+		ED3DBCF52CF2678500F7356A /* hac-manTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DBCF62CF2678500F7356A /* hac_manTests.swift */,
+			);
+			path = "hac-manTests";
+			sourceTree = "<group>";
+		};
+		ED3DBCFF2CF2678500F7356A /* hac-manUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED3DBD002CF2678500F7356A /* hac_manUITests.swift */,
+				ED3DBD022CF2678500F7356A /* hac_manUITestsLaunchTests.swift */,
+			);
+			path = "hac-manUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED3DBCDA2CF2678400F7356A /* hac-man */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3DBD062CF2678500F7356A /* Build configuration list for PBXNativeTarget "hac-man" */;
+			buildPhases = (
+				ED3DBCD72CF2678400F7356A /* Sources */,
+				ED3DBCD82CF2678400F7356A /* Frameworks */,
+				ED3DBCD92CF2678400F7356A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hac-man";
+			productName = "hac-man";
+			productReference = ED3DBCDB2CF2678400F7356A /* hac-man.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED3DBCF12CF2678500F7356A /* hac-manTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3DBD092CF2678500F7356A /* Build configuration list for PBXNativeTarget "hac-manTests" */;
+			buildPhases = (
+				ED3DBCEE2CF2678500F7356A /* Sources */,
+				ED3DBCEF2CF2678500F7356A /* Frameworks */,
+				ED3DBCF02CF2678500F7356A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED3DBCF42CF2678500F7356A /* PBXTargetDependency */,
+			);
+			name = "hac-manTests";
+			productName = "hac-manTests";
+			productReference = ED3DBCF22CF2678500F7356A /* hac-manTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED3DBCFB2CF2678500F7356A /* hac-manUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED3DBD0C2CF2678500F7356A /* Build configuration list for PBXNativeTarget "hac-manUITests" */;
+			buildPhases = (
+				ED3DBCF82CF2678500F7356A /* Sources */,
+				ED3DBCF92CF2678500F7356A /* Frameworks */,
+				ED3DBCFA2CF2678500F7356A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED3DBCFE2CF2678500F7356A /* PBXTargetDependency */,
+			);
+			name = "hac-manUITests";
+			productName = "hac-manUITests";
+			productReference = ED3DBCFC2CF2678500F7356A /* hac-manUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED3DBCD32CF2678400F7356A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					ED3DBCDA2CF2678400F7356A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					ED3DBCF12CF2678500F7356A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ED3DBCDA2CF2678400F7356A;
+					};
+					ED3DBCFB2CF2678500F7356A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = ED3DBCDA2CF2678400F7356A;
+					};
+				};
+			};
+			buildConfigurationList = ED3DBCD62CF2678400F7356A /* Build configuration list for PBXProject "hac-man" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED3DBCD22CF2678400F7356A;
+			productRefGroup = ED3DBCDC2CF2678400F7356A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED3DBCDA2CF2678400F7356A /* hac-man */,
+				ED3DBCF12CF2678500F7356A /* hac-manTests */,
+				ED3DBCFB2CF2678500F7356A /* hac-manUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED3DBCD92CF2678400F7356A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3DBCE12CF2678400F7356A /* GameScene.sks in Resources */,
+				ED3DBCE92CF2678500F7356A /* Assets.xcassets in Resources */,
+				ED3DBCE32CF2678400F7356A /* Actions.sks in Resources */,
+				ED3DBCEC2CF2678500F7356A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3DBCF02CF2678500F7356A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3DBCFA2CF2678500F7356A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED3DBCD72CF2678400F7356A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3DBCE72CF2678400F7356A /* ViewController.swift in Sources */,
+				ED3DBCE52CF2678400F7356A /* GameScene.swift in Sources */,
+				ED3DBCDF2CF2678400F7356A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3DBCEE2CF2678500F7356A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3DBCF72CF2678500F7356A /* hac_manTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED3DBCF82CF2678500F7356A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3DBD032CF2678500F7356A /* hac_manUITestsLaunchTests.swift in Sources */,
+				ED3DBD012CF2678500F7356A /* hac_manUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED3DBCF42CF2678500F7356A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3DBCDA2CF2678400F7356A /* hac-man */;
+			targetProxy = ED3DBCF32CF2678500F7356A /* PBXContainerItemProxy */;
+		};
+		ED3DBCFE2CF2678500F7356A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED3DBCDA2CF2678400F7356A /* hac-man */;
+			targetProxy = ED3DBCFD2CF2678500F7356A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED3DBCEA2CF2678500F7356A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED3DBCEB2CF2678500F7356A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED3DBD042CF2678500F7356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED3DBD052CF2678500F7356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		ED3DBD072CF2678500F7356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "hac-man/hac_man.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Counterspell-hac-man.hac-man";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ED3DBD082CF2678500F7356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "hac-man/hac_man.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Counterspell-hac-man.hac-man";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ED3DBD0A2CF2678500F7356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Counterspell-hac-man.hac-manTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hac-man.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hac-man";
+			};
+			name = Debug;
+		};
+		ED3DBD0B2CF2678500F7356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Counterspell-hac-man.hac-manTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hac-man.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hac-man";
+			};
+			name = Release;
+		};
+		ED3DBD0D2CF2678500F7356A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Counterspell-hac-man.hac-manUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "hac-man";
+			};
+			name = Debug;
+		};
+		ED3DBD0E2CF2678500F7356A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Counterspell-hac-man.hac-manUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "hac-man";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED3DBCD62CF2678400F7356A /* Build configuration list for PBXProject "hac-man" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3DBD042CF2678500F7356A /* Debug */,
+				ED3DBD052CF2678500F7356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3DBD062CF2678500F7356A /* Build configuration list for PBXNativeTarget "hac-man" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3DBD072CF2678500F7356A /* Debug */,
+				ED3DBD082CF2678500F7356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3DBD092CF2678500F7356A /* Build configuration list for PBXNativeTarget "hac-manTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3DBD0A2CF2678500F7356A /* Debug */,
+				ED3DBD0B2CF2678500F7356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED3DBD0C2CF2678500F7356A /* Build configuration list for PBXNativeTarget "hac-manUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED3DBD0D2CF2678500F7356A /* Debug */,
+				ED3DBD0E2CF2678500F7356A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED3DBCD32CF2678400F7356A /* Project object */;
+}
