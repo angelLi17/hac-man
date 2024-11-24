@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,6 +49,10 @@
 		EDC856262CF2E8CE00AF8362 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = GameScene/GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0E2A676A2CF3077F0095A972 /* hac-manCharacters */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "hac-manCharacters"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		ED3DBCD82CF2678400F7356A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -77,6 +81,7 @@
 		ED3DBCD22CF2678400F7356A = {
 			isa = PBXGroup;
 			children = (
+				0E2A676A2CF3077F0095A972 /* hac-manCharacters */,
 				ED3DBCDD2CF2678400F7356A /* hac-man */,
 				ED3DBCF52CF2678500F7356A /* hac-manTests */,
 				ED3DBCFF2CF2678500F7356A /* hac-manUITests */,
