@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		ED3DBCDF2CF2678400F7356A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCDE2CF2678400F7356A /* AppDelegate.swift */; };
-		ED3DBCE12CF2678400F7356A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCE02CF2678400F7356A /* GameScene.sks */; };
-		ED3DBCE32CF2678400F7356A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCE22CF2678400F7356A /* Actions.sks */; };
-		ED3DBCE52CF2678400F7356A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCE42CF2678400F7356A /* GameScene.swift */; };
 		ED3DBCE72CF2678400F7356A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCE62CF2678400F7356A /* ViewController.swift */; };
 		ED3DBCE92CF2678500F7356A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCE82CF2678500F7356A /* Assets.xcassets */; };
 		ED3DBCEC2CF2678500F7356A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = ED3DBCEB2CF2678500F7356A /* Base */; };
 		ED3DBCF72CF2678500F7356A /* hac_manTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBCF62CF2678500F7356A /* hac_manTests.swift */; };
 		ED3DBD012CF2678500F7356A /* hac_manUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBD002CF2678500F7356A /* hac_manUITests.swift */; };
 		ED3DBD032CF2678500F7356A /* hac_manUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3DBD022CF2678500F7356A /* hac_manUITestsLaunchTests.swift */; };
+		EDC856272CF2E8CE00AF8362 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC856262CF2E8CE00AF8362 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +37,6 @@
 /* Begin PBXFileReference section */
 		ED3DBCDB2CF2678400F7356A /* hac-man.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hac-man.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3DBCDE2CF2678400F7356A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED3DBCE02CF2678400F7356A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		ED3DBCE22CF2678400F7356A /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		ED3DBCE42CF2678400F7356A /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		ED3DBCE62CF2678400F7356A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED3DBCE82CF2678500F7356A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED3DBCEB2CF2678500F7356A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +46,7 @@
 		ED3DBCFC2CF2678500F7356A /* hac-manUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hac-manUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3DBD002CF2678500F7356A /* hac_manUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hac_manUITests.swift; sourceTree = "<group>"; };
 		ED3DBD022CF2678500F7356A /* hac_manUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hac_manUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EDC856262CF2E8CE00AF8362 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = GameScene/GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				ED3DBCDE2CF2678400F7356A /* AppDelegate.swift */,
-				ED3DBCE02CF2678400F7356A /* GameScene.sks */,
-				ED3DBCE22CF2678400F7356A /* Actions.sks */,
-				ED3DBCE42CF2678400F7356A /* GameScene.swift */,
 				ED3DBCE62CF2678400F7356A /* ViewController.swift */,
+				EDC856262CF2E8CE00AF8362 /* GameScene.swift */,
 				ED3DBCE82CF2678500F7356A /* Assets.xcassets */,
 				ED3DBCEA2CF2678500F7356A /* Main.storyboard */,
 				ED3DBCED2CF2678500F7356A /* hac_man.entitlements */,
@@ -234,9 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3DBCE12CF2678400F7356A /* GameScene.sks in Resources */,
 				ED3DBCE92CF2678500F7356A /* Assets.xcassets in Resources */,
-				ED3DBCE32CF2678400F7356A /* Actions.sks in Resources */,
 				ED3DBCEC2CF2678500F7356A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC856272CF2E8CE00AF8362 /* GameScene.swift in Sources */,
 				ED3DBCE72CF2678400F7356A /* ViewController.swift in Sources */,
-				ED3DBCE52CF2678400F7356A /* GameScene.swift in Sources */,
 				ED3DBCDF2CF2678400F7356A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
