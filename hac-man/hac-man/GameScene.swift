@@ -10,11 +10,15 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    
+    let pacman = SKSpriteNode(imageNamed: "pacman1");
+
     
     override func didMove(to view: SKView) {
-        
-        
+        backgroundColor = SKColor.black;
+        pacman.position = CGPoint(x: size.width / 2, y: size.height / 2);
+        pacman.setScale(0.5);
+        pacman.physicsBody = SKPhysicsBody(circleOfRadius:8);
+        addChild(pacman);
     }
     
     
