@@ -10,7 +10,6 @@ import SpriteKit
 class Ghost: SKSpriteNode {
     
     private var alive: Bool = true
-    private var sprite: SKSpriteNode
     private var xVelocity: Int
     private var yVelocity: Int
     private var ghostSpeed: Int
@@ -43,31 +42,30 @@ class Ghost: SKSpriteNode {
         self.alive = alive;
     }
     
-    init(sprite: SKSpriteNode, xVelocity: Int, yVelocity: Int, playerSpeed: Int, isAlive: Bool) {
+    init(sprite: SKTexture, xVelocity: Int, yVelocity: Int, playerSpeed: Int, isAlive: Bool) {
+        self.ghostSpeed = Int.random(in: 1...5)
         self.xVelocity = xVelocity
         self.yVelocity = yVelocity
-        self.ghostSpeed = Int: random(in:1,5)
-        self.sprite = sprite
         self.alive = true
-        
+        super.init(texture: sprite, color: NSColor.clear, size: sprite.size())
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func moveGhost(){
+    func moveGhost() {
         let possibleDirections: [CGVector] = [
             CGVector(dx: 1, dy: 0),  // Right
             CGVector(dx: -1, dy: 0), // Left
             CGVector(dx: 0, dy: 1),  // Up
             CGVector(dx: 0, dy: -1)  // Down
         ]
-        let randomDirection = possibleDirections.randomElement()!
-        let randomDuration = Double.random(in: 1...10)
+        var randomDirection = possibleDirections.randomElement()!
+        var randomDuration = Double.random(in: 1...10)
         let tileSize: CGFloat = 16
-        while () {
-            let randomDirection = possibleDirections.randomElement()!
-            let randomDuration = Double.random(in: 1...10)
+        while (!pathViable()) {
+            randomDirection = possibleDirections.randomElement()!
+            randomDuration = Double.random(in: 1...10)
         }
         let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize,
                                              y: randomDirection.dy * tileSize,
@@ -75,5 +73,13 @@ class Ghost: SKSpriteNode {
         self.run(moveAction) {
             self.moveGhost()
         }
+    }
+    func pathViable() -> Bool {
+        let tileSize: CGFloat = 32
+        guard nextTileColumn >= 0 && nextTileColumn < mapWidth &&
+                    nextTileRow >= 0 && nextTileRow < mapHeight else {
+            return false
+        }
+        return true; //modify later
     }
 }

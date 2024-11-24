@@ -11,10 +11,10 @@ import GameplayKit
 class GameScene: SKScene {
     
     var pacman = Player(xVelocity: 0,yVelocity: 1,playerSpeed: 2.0)
-    let blinky = Ghost(SKSpriteNode(imageNamed: "bluGhost"), Int.random(in 1,5), true)
-    let yinky = Ghost(SKSpriteNode(imageNamed: "yellowGhost"), Int.random(in 1,5), true)
-    let rinky = Ghost(SKSpriteNode(imageNamed: "redGhost"), Int.random(in 1,5), true)
-    let ginky = Ghost(SKSpriteNode(imageNamed: "greenGhost"), Int.random(in 1-5), true)
+    let blinky = Ghost(sprite: SKTexture(imageNamed: "bluGhost"), xVelocity: 0, yVelocity: 0, playerSpeed: Int.random(in: 1...5), isAlive: true)
+    let yinky = Ghost(sprite: SKTexture(imageNamed: "yellowGhost"), xVelocity: 0, yVelocity: 0, playerSpeed: Int.random(in: 1...5), isAlive: true)
+    let rinky = Ghost(sprite: SKTexture(imageNamed: "redGhost"), xVelocity: 0, yVelocity: 0, playerSpeed: Int.random(in: 1...5), isAlive: true)
+    let ginky = Ghost(sprite: SKTexture(imageNamed: "greenGhost"), xVelocity: 0, yVelocity: 0, playerSpeed: Int.random(in: 1...5), isAlive: true)
     var rightAnimation = SKAction()
     var leftAnimation = SKAction()
     var upAnimation = SKAction()
@@ -32,27 +32,26 @@ class GameScene: SKScene {
         pacman.physicsBody?.isDynamic = false
         addChild(pacman)
         
-        blinky.position = CGPoint(x:0,y:0)
-        rinky.position  = CGPoint(x:0,y:0)
-        yinky.position = CGPoint(x:0,y:0)
-        ginky.position = CGPoint(x:0,y:0)
+        blinky.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        rinky.position  = CGPoint(x: size.width / 2, y: size.height / 2)
+        yinky.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        ginky.position = CGPoint(x: size.width / 2, y: size.height / 2)
         addChild(blinky)
-        addChild(rinky)
+                addChild(rinky)
         addChild(yinky)
         addChild(ginky)
         blinky.moveGhost()
         rinky.moveGhost()
         yinky.moveGhost()
         ginky.moveGhost()
-
         
-        if pacman.xVelocity == -1 {
+        if pacman.xVelocity < 0 {
             pacman.run(SKAction.repeatForever(leftAnimation))
-        } else if pacman.xVelocity == 1 {
+        } else if pacman.xVelocity > 0 {
             pacman.run(SKAction.repeatForever(rightAnimation))
-        } else if pacman.yVelocity == -1 {
+        } else if pacman.yVelocity < 0 {
             pacman.run(SKAction.repeatForever(downAnimation))
-        } else if pacman.yVelocity == 1 {
+        } else if pacman.yVelocity > 0 {
             pacman.run(SKAction.repeatForever(upAnimation))
         }
     }
@@ -86,20 +85,16 @@ class GameScene: SKScene {
         switch event.keyCode {
         case 123:
             pacman.run(SKAction.repeatForever(leftAnimation))
-            pacman.xVelocity = -1
-            pacman.yVelocity = 0
+       
         case 124:
             pacman.run(SKAction.repeatForever(rightAnimation))
-            pacman.xVelocity = 1
-            pacman.yVelocity = 0
+            
         case 125:
             pacman.run(SKAction.repeatForever(downAnimation))
-            pacman.xVelocity = 0
-            pacman.yVelocity = -1
+           
         case 126:
             pacman.run(SKAction.repeatForever(upAnimation))
-            pacman.xVelocity = 0
-            pacman.yVelocity = 1
+            
         case 0x31:
             print("case 0x31")
         default:
@@ -111,9 +106,5 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         pacman.position.x += pacman.xVelocity * pacman.playerSpeed
         pacman.position.y += pacman.yVelocity * pacman.playerSpeed
-    }
-
-    func dots() {
-        
     }
 }
