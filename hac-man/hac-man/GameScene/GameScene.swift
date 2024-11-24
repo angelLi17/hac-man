@@ -10,6 +10,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    
     private var pacman = SKSpriteNode(imageNamed: "pacman1")
     private var playerXVelocity: CGFloat = 0
     private var playerYVelocity: CGFloat = 0
