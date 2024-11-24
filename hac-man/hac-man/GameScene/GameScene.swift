@@ -20,11 +20,35 @@ class GameScene: SKScene {
     var upAnimation = SKAction()
     var downAnimation = SKAction()
     
+    func pathViable(nextPixelColumn: Int, nextPixelRow: Int, tileMap: [[[Int]]]) -> Bool {
+        let tileSize: CGFloat = 16
+        let nextTileColumn = nextPixelColumn/16
+        let nextTileRow = nextPixelRow/16
+        guard nextTileColumn >= 0 && nextTileColumn < 18 && nextTileRow >= 0 && nextTileRow < 24 else {
+            return false
+        }
+//        guard tileMap[nextTileRow][nextTileColumn] == 0 else {
+//            return false
+//        }
+        return true;
+    }
+    
     override func didMove(to view: SKView) {
         rightAnimation = SKAction.animate(with: pacman.rightWalkTextures, timePerFrame: 0.2)
         leftAnimation = SKAction.animate(with: pacman.leftWalkTextures, timePerFrame: 0.2)
         upAnimation = SKAction.animate(with: pacman.upWalkTextures, timePerFrame: 0.2)
         downAnimation = SKAction.animate(with: pacman.downWalkTextures, timePerFrame: 0.2)
+        
+        let possibleDirections: [CGVector] = [
+            CGVector(dx: 1, dy: 0),  // Right
+            CGVector(dx: -1, dy: 0), // Left
+            CGVector(dx: 0, dy: 1),  // Up
+            CGVector(dx: 0, dy: -1)  // Down
+        ]
+        let tileSize: CGFloat = 16
+        var randomDuration = Double.random(in: 1...10)
+        let moveAction = SKAction.moveBy(x: possibleDirections.randomElement()!.dx * tileSize, y: possibleDirections.randomElement()!.dy * tileSize, duration: randomDuration)
+        
         backgroundColor = SKColor.black
         pacman.position = CGPoint(x: size.width / 2, y: size.height / 2)
         pacman.setScale(0.5)
@@ -36,14 +60,20 @@ class GameScene: SKScene {
         rinky.position  = CGPoint(x: size.width / 2, y: size.height / 2)
         yinky.position = CGPoint(x: size.width / 2, y: size.height / 2)
         ginky.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        
         addChild(blinky)
-                addChild(rinky)
+        addChild(rinky)
         addChild(yinky)
         addChild(ginky)
         blinky.moveGhost()
         rinky.moveGhost()
         yinky.moveGhost()
         ginky.moveGhost()
+        
+        blinky.run(SKAction.repeatForever(moveAction))
+        rinky.run(SKAction.repeatForever(moveAction))
+        yinky.run(SKAction.repeatForever(moveAction))
+        ginky.run(SKAction.repeatForever(moveAction))
         
         if pacman.xVelocity < 0 {
             pacman.run(SKAction.repeatForever(leftAnimation))
@@ -55,7 +85,6 @@ class GameScene: SKScene {
             pacman.run(SKAction.repeatForever(upAnimation))
         }
     }
-    
     
     func touchDown(atPoint pos : CGPoint) {
         

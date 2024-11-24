@@ -63,23 +63,6 @@ class Ghost: SKSpriteNode {
         var randomDirection = possibleDirections.randomElement()!
         var randomDuration = Double.random(in: 1...10)
         let tileSize: CGFloat = 16
-        while (!pathViable()) {
-            randomDirection = possibleDirections.randomElement()!
-            randomDuration = Double.random(in: 1...10)
-        }
-        let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize,
-                                             y: randomDirection.dy * tileSize,
-                                             duration: randomDuration)
-        self.run(moveAction) {
-            self.moveGhost()
-        }
-    }
-    func pathViable() -> Bool {
-        let tileSize: CGFloat = 32
-        guard nextTileColumn >= 0 && nextTileColumn < mapWidth &&
-                    nextTileRow >= 0 && nextTileRow < mapHeight else {
-            return false
-        }
-        return true; //modify later
+        let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize, y: randomDirection.dy * tileSize, duration: randomDuration)
     }
 }
