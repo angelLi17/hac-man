@@ -11,6 +11,10 @@ import GameplayKit
 class GameScene: SKScene {
     
     var pacman = Player(xVelocity: 0,yVelocity: 1,playerSpeed: 2.0)
+    let blinky = Ghost(SKSpriteNode(imageNamed: "bluGhost"), Int.random(in 1,5), true)
+    let yinky = Ghost(SKSpriteNode(imageNamed: "yellowGhost"), Int.random(in 1,5), true)
+    let rinky = Ghost(SKSpriteNode(imageNamed: "redGhost"), Int.random(in 1,5), true)
+    let ginky = Ghost(SKSpriteNode(imageNamed: "greenGhost"), Int.random(in 1-5), true)
     var rightAnimation = SKAction()
     var leftAnimation = SKAction()
     var upAnimation = SKAction()
@@ -27,6 +31,20 @@ class GameScene: SKScene {
         pacman.physicsBody = SKPhysicsBody(circleOfRadius:8)
         pacman.physicsBody?.isDynamic = false
         addChild(pacman)
+        
+        blinky.position = CGPoint(.zero)
+        rinky.position  = CGPoint(.zero)
+        yinky.position = CGPoint(.zero)
+        ginky.position = CGPoint(.zero)
+        addChild(blinky)
+        addChild(rinky)
+        addChild(yinky)
+        addChild(ginky)
+        blinky.moveGhost()
+        rinky.moveGhost()
+        yinky.moveGhost()
+        ginky.moveGhost()
+
         
         if pacman.xVelocity == -1 {
             pacman.run(SKAction.repeatForever(leftAnimation))
