@@ -46,27 +46,34 @@ class Ghost: SKSpriteNode {
     init(sprite: SKSpriteNode, xVelocity: Int, yVelocity: Int, playerSpeed: Int, isAlive: Bool) {
         self.xVelocity = xVelocity
         self.yVelocity = yVelocity
-        self.ghostSpeed = Double: random(in:1,5)
+        self.ghostSpeed = Int: random(in:1,5)
         self.sprite = sprite
         self.alive = true
         
     }
-    func moveGhost(ghost: Ghost){
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    func moveGhost(){
         let possibleDirections: [CGVector] = [
             CGVector(dx: 1, dy: 0),  // Right
             CGVector(dx: -1, dy: 0), // Left
             CGVector(dx: 0, dy: 1),  // Up
             CGVector(dx: 0, dy: -1)  // Down
         ]
-        while true {
+        let randomDirection = possibleDirections.randomElement()!
+        let randomDuration = Double.random(in: 1...10)
+        let tileSize: CGFloat = 16
+        while () {
             let randomDirection = possibleDirections.randomElement()!
             let randomDuration = Double.random(in: 1...10)
-            if () {
-                let tileSize: CGFloat = 16
-                let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize,
-                                                     y: randomDirection.dy * tileSize,
-                                                     duration: randomDuration)
-            }
+        }
+        let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize,
+                                             y: randomDirection.dy * tileSize,
+                                             duration: randomDuration)
+        self.run(moveAction) {
+            self.moveGhost()
         }
     }
 }

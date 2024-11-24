@@ -32,10 +32,10 @@ class GameScene: SKScene {
         pacman.physicsBody?.isDynamic = false
         addChild(pacman)
         
-        blinky.position = CGPoint(.zero)
-        rinky.position  = CGPoint(.zero)
-        yinky.position = CGPoint(.zero)
-        ginky.position = CGPoint(.zero)
+        blinky.position = CGPoint(x:0,y:0)
+        rinky.position  = CGPoint(x:0,y:0)
+        yinky.position = CGPoint(x:0,y:0)
+        ginky.position = CGPoint(x:0,y:0)
         addChild(blinky)
         addChild(rinky)
         addChild(yinky)
