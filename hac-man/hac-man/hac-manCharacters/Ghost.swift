@@ -7,7 +7,7 @@
 
 import SpriteKit
 
-class Ghost: SKSpriteNode {
+public class Ghost: SKSpriteNode {
     
     private var alive: Bool = true
     private var sprite: SKSpriteNode
@@ -61,12 +61,10 @@ class Ghost: SKSpriteNode {
         while true {
             let randomDirection = possibleDirections.randomElement()!
             let randomDuration = Double.random(in: 1...10)
-            if () {
-                let tileSize: CGFloat = 16
-                let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize,
-                                                     y: randomDirection.dy * tileSize,
-                                                     duration: randomDuration)
-            }
         }
+        let tileSize: CGFloat = 16
+        let moveAction = SKAction.moveBy(x: randomDirection.dx * tileSize,
+                                             y: randomDirection.dy * tileSize,
+                                             duration: randomDuration)
     }
 }

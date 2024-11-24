@@ -7,7 +7,7 @@
 import SpriteKit
 import AppKit
 
-class Player: SKSpriteNode {
+public class Player: SKSpriteNode {
     
     var alive: Bool = true
     var xVelocity: Double
